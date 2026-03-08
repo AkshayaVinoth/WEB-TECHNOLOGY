@@ -1,21 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Registration Form Validation</title>
-    <script src="validation.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CYboRG99</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<form name="regForm" onsubmit="return validateForm()">
-    First Name: <input type="text" name="fname"><br><br>
-    Last Name: <input type="text" name="lname"><br><br>
-    Password: <input type="password" name="password"><br><br>
-    Email: <input type="text" name="email"><br><br>
-    Mobile Number: <input type="text" name="mobile"><br><br>
-    Address: <textarea name="address"></textarea><br><br>
+<header>
 
-    <input type="submit" value="Register">
-</form>
+<h1 class="logo">CYBoRG<span>99</span></h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Games</a>
+<a href="#">Features</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>ENTER THE FUTURE OF GAMING</h2>
+
+<p>Your ultimate destination for competitive gaming.</p>
+
+<button class="play-btn">Explore Games</button>
+
+</div>
+
+</section>
+
+
+
+<!-- TRENDING GAMES -->
+
+<section class="games">
+
+<h2 class="section-title">Popular Games</h2>
+
+<div class="game-container">
+
+<div class="game-card" onclick="openGame('shooting')">
+
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
+
+<div class="game-info">
+<h3>Shooting</h3>
+<p>Precision combat in high-speed cyber arenas.</p>
+</div>
+
+</div>
+
+
+<div class="game-card" onclick="openGame('shadow')">
+
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+
+<div class="game-info">
+<h3>Shadow</h3>
+<p>Stealth operations inside neon futuristic cities.</p>
+</div>
+
+</div>
+
+
+<div class="game-card" onclick="openGame('battle')">
+
+<img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf" alt="Battle Game">
+
+<div class="game-info">
+<h3>Battle</h3>
+<p>Massive multiplayer combat warfare.</p>
+</div>
+
+</div>
+
+
+
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="game-container">
+
+<div class="game-card">
+
+<div class="game-info">
+<h3>⚡ Ultra Fast Servers</h3>
+<p>Experience lag-free gaming with high-performance infrastructure.</p>
+</div>
+
+</div>
+
+
+<div class="game-card">
+
+<div class="game-info">
+<h3>🎮 Massive Game Library</h3>
+<p>Play hundreds of modern and classic games anytime.</p>
+</div>
+
+</div>
+
+
+<div class="game-card">
+
+<div class="game-info">
+<h3>🌍 Global Community</h3>
+<p>Compete with players from all over the world.</p>
+</div>
+
+</div>
+
+
+<div class="game-card">
+
+<div class="game-info">
+<h3>🔒 Secure Platform</h3>
+<p>Your data and progress are protected with strong security.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+<h3>Glow Gaming</h3>
+<p>Your ultimate destination for competitive gaming.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p>Features</p>
+<p>Games</p>
+<p>Community</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>123 Gaming Street, NY</p>
+<p>(555) 123-4567</p>
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+<div id="gameModal" class="game-modal">
+
+<div class="modal-content">
+
+<h2 id="gameTitle"></h2>
+
+<p id="gameDescription"></p>
+
+<button class="play-btn">Play Game</button>
+
+<button class="close-btn" onclick="closeGame()">Exit</button>
+
+</div>
+
+</div>
 
 </body>
+
 </html>
+<div id="loader">Loading Gaming Universe...</div>
+<canvas id="particles"></canvas>
